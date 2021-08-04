@@ -1,0 +1,16 @@
+Solarmarker 
+-----------
+
+If you are in the possession of the obfuscated powershell module "Mars" ([MARs.DEiMoS]) and find yourself confused how to decode it, here is how:
+
+1) Locate the base64 part, found between "[sYsteM.ConVERT]::FROmbase64sTrING('" and ");For"
+2) Paste the data into Cyber Chef
+3) Pick "From Base64"
+4) Locate the "-BXOR" part and take note of the variable starting with a dollar sign ($)
+5) Locate the first occurrence and copy data between "<variable name>='" and "';"
+6) In Cyber Chef, pick XOR and drop that recipe after the previous Base64 recipe
+7) Add the newly copied data, into the field named "Key"
+8) Pick "UTF8"
+8) Bake
+9) If you where successful there should be a visible "MZ" in the lower right side of the Cyber Chef GUI
+10) You can now download the decoded sample DLL and continue your journey
